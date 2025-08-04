@@ -95,13 +95,7 @@ int main() {
     Superpoder1 = (float)Populacao1 + Area1 + Pib1 + (float)PontosTuristicos1 + Pibpercapita1 + ( 1 / DensidadePopulacional1 );
     Superpoder2 = (float)Populacao2 + Area2 + Pib2 + (float)PontosTuristicos2 + Pibpercapita2 + ( 1 / DensidadePopulacional2 );
     
-    // Comparação das cartas 
-
-
-
-    
     // Menu interativo
-    
     int escolha;
     
     printf("\n=== MENU DE COMPARAÇÃO ===\n");
@@ -116,7 +110,8 @@ int main() {
     scanf("%d", &escolha);
 
     printf("\nComparando %s vs %s:\n", NomeCidade1, NomeCidade2);
-
+    
+    // Comparação das Cartas
     switch (escolha)
     {
     case 1:                 // População
@@ -142,7 +137,7 @@ int main() {
             printf("Resultado: %s venceu!\n", NomeCidade2);
         }
     }
-    // Se não for maior nem menor, então são iguais
+    // Se não for maior nem menor são iguais
     else {
         printf("Resultado: Empate!\n");
     }
